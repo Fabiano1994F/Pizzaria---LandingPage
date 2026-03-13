@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Pizzaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="logo">SP Pizzaria</div>
+    <button class="menu-toggle">☰</button> <nav class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#menu">Cardápio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+    <section class="slider-container" id="home">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('img/pizza001.jpg');">
+                <div class="info">
+                    <h1>A melhor Pizzaria da região</h1>
+                    <p>Experimente nossas pizzas artesanais e sabores incríveis!</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('img/pizza002.jpg');">
+                <div class="info">
+                    <h1>Ingredientes frescos e de qualidade</h1>
+                    <p>Utilizamos apenas os melhores ingredientes para garantir o sabor perfeito.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dots">
+            <span class="doc active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+        </div>
+    </section>
+
+
+    <section id="menu" class="menu-section">
+    <div class="container">
+        <h2 class="section-title">Nossas <span>Pizzas</span></h2>
+        
+        <div class="menu-grid">
+            <div class="pizza-card">
+                <div class="pizza-img" style="background-image: url('img/margherita.jpg');"></div>
+                <div class="pizza-info">
+                    <h3>Margherita Clássica</h3>
+                    <p>Molho de tomate italiano, mozzarella de búfala e manjericão fresco.</p>
+                    <div class="price-row">
+                        <span class="price">R$ 54,90</span>
+                        <button class="btn-buy">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pizza-card">
+                <div class="pizza-img" style="background-image: url('img/peperoni.jpg');"></div>
+                <div class="pizza-info">
+                    <h3>Pepperoni Supreme</h3>
+                    <p>Fatias generosas de pepperoni premium com queijo derretido.</p>
+                    <div class="price-row">
+                        <span class="price">R$ 62,00</span>
+                        <button class="btn-buy">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pizza-card">
+                <div class="pizza-img" style="background-image: url('img/queijo.jpg');"></div>
+                <div class="pizza-info">
+                    <h3>Quatro Queijos</h3>
+                    <p>A combinação perfeita de Mozzarella, Gorgonzola, Parmesão e Catupiry.</p>
+                    <div class="price-row">
+                        <span class="price">R$ 59,90</span>
+                        <button class="btn-buy">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+             <div class="pizza-card">
+                <div class="pizza-img" style="background-image: url('img/calabresa.avif');"></div>
+                <div class="pizza-info">
+                    <h3>Calabresa</h3>
+                    <p>Fatias generosas de calabresa defumada, com fatias finas e deliciosas.</p>
+                    <div class="price-row">
+                        <span class="price">R$ 50,00</span>
+                        <button class="btn-buy">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza-card">
+                <div class="pizza-img" style="background-image: url('img/frangocomcatupiry.jpg')"></div>
+                <div class="pizza-info">
+                    <h3>Frango com Catupiry</h3>
+                    <p>Frango desfiado com catupiry cremoso e tempero especial.</p>
+                    <div class="price-row">
+                        <span class="price">R$ 59,90</span>
+                        <button class="btn-buy">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+             <div class="pizza-card">
+                <div class="pizza-img" style="background-image: url('img/portuguuesa.jpg');"></div>
+                <div class="pizza-info">
+                    <h3>Portuguesa</h3>
+                    <p>Presunto, ovos, cebola e pimentão verde.</p>
+                    <div class="price-row">
+                        <span class="price">R$ 59,90</span>
+                        <button class="btn-buy">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+              <div class="pizza-card">
+                <div class="pizza-img" style="background-image: url('img/atum.jpg');"></div>
+                <div class="pizza-info">
+                    <h3>Atum</h3>
+                    <p>Atum fresco, cebola e azeite de oliva.</p>
+                    <div class="price-row">
+                        <span class="price">R$ 55,90</span>
+                        <button class="btn-buy">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza-card">
+                <div class="pizza-img" style="background-image: url('img/palmito.jpg');"></div>
+                <div class="pizza-info">
+                    <h3>Palmito</h3>
+                    <p>Palmito crocante, cebola e azeite de oliva.</p>
+                    <div class="price-row">
+                        <span class="price">R$ 49,90</span>
+                        <button class="btn-buy">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Faça sua <span>Reserva</span></h2>
+        
+        <div class="contact-wrapper">
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Seu Nome" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="input-group">
+                    <select>
+                        <option value="1">1 Pessoa</option>
+                        <option value="2">2 Pessoas</option>
+                        <option value="4">4 Pessoas ou mais</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Reservar Mesa</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Onde Estamos</h3>
+                <p>Rua das Pizzas, 123 - Centro</p>
+                <p>São Paulo - SP</p>
+                <br>
+                <h3>Horário de Funcionamento</h3>
+                <p>Terça a Domingo: 18h às 23h30</p>
+                <br>
+                <h3>WhatsApp</h3>
+                <p class="highlight-contact">(11) 9 8153-0914</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 SP Pizzaria. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Fábio Santos</p>
+    </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
